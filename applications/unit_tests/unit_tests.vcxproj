@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{762C92C2-4D9F-4E18-9A2B-6ED290068D26}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>unit_tests</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;USE_SYNC_CALL_FOR_EXECUTER_OBJECT;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>W:\ext_lib\boost_1_48_ported_to_vxworks;W:\ext_lib\gmock-1.6.0\include;W:\ext_lib\gmock-1.6.0\gtest\include;W:\include</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>boost_libs.lib;gmock.lib;gmock_main.lib;osal_lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(SolutionDir)$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\asynccallbacks\AsyncCallbackUtils.cpp" />
+    <ClCompile Include="..\..\src\asynccallbacks\demo\ActiveClass.cpp" />
+    <ClCompile Include="..\..\src\asynccallbacks\demo\ActiveClassTests.cpp" />
+    <ClCompile Include="..\..\src\asynccallbacks\demo\InternalWorker.cpp" />
+    <ClCompile Include="..\..\src\asynccallbacks\demo\ParameterType.cpp" />
+    <ClCompile Include="..\..\src\asynccallbacks\WorkingQueue.cpp" />
+    <ClCompile Include="..\..\src\fsm\Event.cpp" />
+    <ClCompile Include="..\..\src\fsm\MachineBase.cpp" />
+    <ClCompile Include="..\..\src\fsm\MachineSerializer.cpp" />
+    <ClCompile Include="..\..\src\fsm\Serializable.cpp" />
+    <ClCompile Include="..\..\src\fsm\State.cpp" />
+    <ClCompile Include="..\..\src\fsm\StateFactory.cpp" />
+    <ClCompile Include="..\..\src\fsm\testHFsm\ActionsMock.cpp" />
+    <ClCompile Include="..\..\src\fsm\testHFsm\AdminDownState.cpp" />
+    <ClCompile Include="..\..\src\fsm\testHFsm\AdminUpState.cpp" />
+    <ClCompile Include="..\..\src\fsm\testHFsm\DownState.cpp" />
+    <ClCompile Include="..\..\src\fsm\testHFsm\Events.cpp" />
+    <ClCompile Include="..\..\src\fsm\testHFsm\fsmHTests.cpp" />
+    <ClCompile Include="..\..\src\fsm\testHFsm\UpState.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\CommonTransitions.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\Events.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\fsmTests.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateA.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateAa.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateAab.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateAc.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateB.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateC.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateCStar.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\StateStart.cpp" />
+    <ClCompile Include="..\..\src\fsm\test\TransitionActionsMock.cpp" />
+    <ClCompile Include="..\..\src\fsm\Transition.cpp" />
+    <ClCompile Include="..\..\src\osal\tests\countingSempahoreUT.cpp" />
+    <ClCompile Include="..\..\src\osal\tests\eventNotificationUT.cpp" />
+    <ClCompile Include="..\..\src\osal\tests\messageQueueUT.cpp" />
+    <ClCompile Include="..\..\src\osal\tests\mutexUT.cpp" />
+    <ClCompile Include="..\..\src\osal\tests\rwMutexUT.cpp" />
+    <ClCompile Include="..\..\src\osal\tests\threadUT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\asynccallbacks\Executer.h" />
+    <ClInclude Include="..\..\include\fsm\Event.h" />
+    <ClInclude Include="..\..\include\fsm\Machine.h" />
+    <ClInclude Include="..\..\include\fsm\MachineSerializer.h" />
+    <ClInclude Include="..\..\include\fsm\State.h" />
+    <ClInclude Include="..\..\include\fsm\StateFactory.h" />
+    <ClInclude Include="..\..\include\fsm\Transition.h" />
+    <ClInclude Include="..\..\include\osal\CountingSemaphore.h" />
+    <ClInclude Include="..\..\include\osal\EventNotification.h" />
+    <ClInclude Include="..\..\include\osal\MessageQueue.h" />
+    <ClInclude Include="..\..\include\osal\Mutex.h" />
+    <ClInclude Include="..\..\include\osal\OsalGeneralDefines.h" />
+    <ClInclude Include="..\..\include\osal\RWMutex.h" />
+    <ClInclude Include="..\..\include\osal\StopWatch.h" />
+    <ClInclude Include="..\..\include\osal\Thread.h" />
+    <ClInclude Include="..\..\src\asynccallbacks\demo\ActiveClass.h" />
+    <ClInclude Include="..\..\src\asynccallbacks\demo\InternalWorker.h" />
+    <ClInclude Include="..\..\src\asynccallbacks\demo\ParameterType.h" />
+    <ClInclude Include="..\..\src\fsm\testHFsm\ActionsMock.h" />
+    <ClInclude Include="..\..\src\fsm\testHFsm\AdminDownState.h" />
+    <ClInclude Include="..\..\src\fsm\testHFsm\AdminUpState.h" />
+    <ClInclude Include="..\..\src\fsm\testHFsm\DownState.h" />
+    <ClInclude Include="..\..\src\fsm\testHFsm\Events.h" />
+    <ClInclude Include="..\..\src\fsm\testHFsm\TransitionActions.h" />
+    <ClInclude Include="..\..\src\fsm\testHFsm\UpState.h" />
+    <ClInclude Include="..\..\src\fsm\test\AllStates.h" />
+    <ClInclude Include="..\..\src\fsm\test\CommonTransitions.h" />
+    <ClInclude Include="..\..\src\fsm\test\Events.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateA.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateAa.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateAab.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateAc.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateB.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateC.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateCStar.h" />
+    <ClInclude Include="..\..\src\fsm\test\StateStart.h" />
+    <ClInclude Include="..\..\src\fsm\test\TransitionActions.h" />
+    <ClInclude Include="..\..\src\fsm\test\TransitionActionsMock.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

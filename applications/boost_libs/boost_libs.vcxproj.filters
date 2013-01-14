@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="date_time">
+      <UniqueIdentifier>{093314ab-0951-4871-809e-18f9eb9f2926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{72d5319f-4765-4aa9-8d7c-d4599085e343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_queue">
+      <UniqueIdentifier>{8c700316-542c-4ddc-b802-0afade709c42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\date_time\posix_time\posix_time_types.cpp">
+      <Filter>date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\date_time\gregorian\greg_weekday.cpp">
+      <Filter>date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\date_time\gregorian\gregorian_types.cpp">
+      <Filter>date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\date_time\gregorian\date_generators.cpp">
+      <Filter>date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\date_time\gregorian\greg_month.cpp">
+      <Filter>date_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\thread\win32\thread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\message_queue\mq_data.cpp">
+      <Filter>message_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\message_queue\message_queue.cpp">
+      <Filter>message_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\thread\tss_null.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ext_lib\boost_1_48_ported_to_vxworks\libs\date_time\gregorian\greg_names.hpp">
+      <Filter>date_time</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

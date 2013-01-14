@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="fsm">
+      <UniqueIdentifier>{426fd001-f190-44e1-a029-6cc8c5355ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsm\test">
+      <UniqueIdentifier>{a6773e18-4f27-4846-babe-b8e027665811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsm\test\machine def">
+      <UniqueIdentifier>{061bbea1-b467-4174-8ef4-511ad279dbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsm\test hirachical machine">
+      <UniqueIdentifier>{fedd354c-e0b6-477e-b0bc-bed5dc8aae73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsm\test hirachical machine\machine def">
+      <UniqueIdentifier>{4d7f3e9e-44e8-470e-b3f3-4a77a17bef0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{9eb0ee80-7c06-4920-9029-6acc85d76b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\osal">
+      <UniqueIdentifier>{7dae413d-fda7-43c7-aca6-c3e2ffbd16c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asynccallbacks">
+      <UniqueIdentifier>{d157ff97-48d4-49a9-9942-35b529e275bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asynccallbacks\demo">
+      <UniqueIdentifier>{0ee4ec33-2a9e-4a3b-8c0d-1e775e2f9b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fsm">
+      <UniqueIdentifier>{36d372b1-6d9f-4dbe-a7e7-3cd832021cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\asynccallbacks">
+      <UniqueIdentifier>{3aef8873-895c-4bdb-ac92-43ba071021fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asynccallbacks\tests">
+      <UniqueIdentifier>{67d0dbb9-55c9-4cf2-b8da-de8f1b76a157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osal">
+      <UniqueIdentifier>{39148e0f-80d0-4444-a025-1cfa2c7e4492}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\fsm\Event.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\MachineBase.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\MachineSerializer.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\Serializable.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\State.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\StateFactory.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\Transition.cpp">
+      <Filter>fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\fsmTests.cpp">
+      <Filter>fsm\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\CommonTransitions.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\Events.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateA.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateAa.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateAab.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateAc.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateB.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateC.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateCStar.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\StateStart.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\test\TransitionActionsMock.cpp">
+      <Filter>fsm\test\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\testHFsm\ActionsMock.cpp">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\testHFsm\AdminDownState.cpp">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\testHFsm\AdminUpState.cpp">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\testHFsm\DownState.cpp">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\testHFsm\Events.cpp">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\testHFsm\UpState.cpp">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fsm\testHFsm\fsmHTests.cpp">
+      <Filter>fsm\test hirachical machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asynccallbacks\AsyncCallbackUtils.cpp">
+      <Filter>asynccallbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asynccallbacks\WorkingQueue.cpp">
+      <Filter>asynccallbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asynccallbacks\demo\ActiveClass.cpp">
+      <Filter>asynccallbacks\demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asynccallbacks\demo\InternalWorker.cpp">
+      <Filter>asynccallbacks\demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asynccallbacks\demo\ParameterType.cpp">
+      <Filter>asynccallbacks\demo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asynccallbacks\demo\ActiveClassTests.cpp">
+      <Filter>asynccallbacks\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\osal\tests\threadUT.cpp">
+      <Filter>osal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\osal\tests\countingSempahoreUT.cpp">
+      <Filter>osal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\osal\tests\eventNotificationUT.cpp">
+      <Filter>osal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\osal\tests\messageQueueUT.cpp">
+      <Filter>osal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\osal\tests\mutexUT.cpp">
+      <Filter>osal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\osal\tests\rwMutexUT.cpp">
+      <Filter>osal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\fsm\test\CommonTransitions.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\Events.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateA.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateAa.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateAab.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateAc.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateB.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateC.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateCStar.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\StateStart.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\TransitionActions.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\TransitionActionsMock.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\test\AllStates.h">
+      <Filter>fsm\test\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\testHFsm\ActionsMock.h">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\testHFsm\AdminDownState.h">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\testHFsm\AdminUpState.h">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\testHFsm\DownState.h">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\testHFsm\Events.h">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\testHFsm\TransitionActions.h">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\fsm\testHFsm\UpState.h">
+      <Filter>fsm\test hirachical machine\machine def</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\CountingSemaphore.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\EventNotification.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\MessageQueue.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\Mutex.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\OsalGeneralDefines.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\RWMutex.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\StopWatch.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\osal\Thread.h">
+      <Filter>include\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asynccallbacks\demo\ActiveClass.h">
+      <Filter>asynccallbacks\demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asynccallbacks\demo\InternalWorker.h">
+      <Filter>asynccallbacks\demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asynccallbacks\demo\ParameterType.h">
+      <Filter>asynccallbacks\demo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\fsm\Event.h">
+      <Filter>include\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\fsm\Machine.h">
+      <Filter>include\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\fsm\MachineSerializer.h">
+      <Filter>include\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\fsm\State.h">
+      <Filter>include\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\fsm\StateFactory.h">
+      <Filter>include\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\fsm\Transition.h">
+      <Filter>include\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\asynccallbacks\Executer.h">
+      <Filter>include\asynccallbacks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

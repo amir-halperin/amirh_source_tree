@@ -1,0 +1,43 @@
+The following properties shall be set in the Visual Studio to allow proper build.
+==================================================================================
+
+
+General
+================
+
+#Add to allow compilation of same file names in different locations
+$(IntDir)/%(RelativeDir)/
+
+To use boost lib e.g. boost::thread
+======================================
+#Add to Preprocessor definitions the following defines:
+BOOST_ALL_NO_LIB
+
+#Change Use of MFC from "Use standard Windows librarries" to "Use MFC in a Static Library"
+
+
+
+For compiling unit_test project settings
+============================
+
+#Add path to include directories
+W:\ext_lib\boost_1_48_ported_to_vxworks
+W:\ext_lib\gmock-1.6.0\include
+W:\ext_lib\gmock-1.6.0\gtest\include
+W:\include
+
+#Add path to lib directory
+W:\lib
+
+For compiling OSAL lib project
+================================
+#Add to Preprocessor definitions the following defines:
+BOOST_ALL_NO_LIB       #to exchange boost original lib names with boost_libs.lib
+SUPPORT_FOR_WIN32_OSAL #to compile operational OSAL functionality, unless you'll receive mocking functionality
+
+To use asyncallbacks::Executer 
+under unit-test env 
+i.e. transform to sync callbacks
+==================================
+#Add to Preprocessor definition
+USE_SYNC_CALL_FOR_EXECUTER_OBJECT

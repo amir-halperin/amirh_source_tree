@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\osal\Thread.cpp" />
+    <ClCompile Include="..\..\src\osal\CountingSempahore.cpp" />
+    <ClCompile Include="..\..\src\osal\EventNotification.cpp" />
+    <ClCompile Include="..\..\src\osal\ExitFunctionHolder.cpp" />
+    <ClCompile Include="..\..\src\osal\MessageQueue.cpp" />
+    <ClCompile Include="..\..\src\osal\Mutex.cpp" />
+    <ClCompile Include="..\..\src\osal\OsalTimeUtils.cpp" />
+    <ClCompile Include="..\..\src\osal\RWMutex.cpp" />
+    <ClCompile Include="..\..\src\osal\StopWatch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\osal\CriticalSection.h" />
+    <ClInclude Include="..\..\src\osal\ExitFunctionHolder.h" />
+    <ClInclude Include="..\..\src\osal\OsalTimeUtils.h" />
+  </ItemGroup>
+</Project>
